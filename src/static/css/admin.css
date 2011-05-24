@@ -1,0 +1,107 @@
+/* ////////////////  Admin styles  //////////////// */
+
+.createQuestion {
+	text-align: center;
+}
+
+.adminSection {
+	margin-top: 40px;
+}
+
+/* ////////////////  Data entry styles  //////////////// */
+
+.dataEntryTable {
+	margin: 20px auto 0 auto;
+}
+
+.dataEntryTable tr {
+	height: 30px;
+}
+
+.dataEntryDiv {
+	width: 90%;
+	border: solid 1px #b2b2b2;
+	margin: 20px auto 0 auto;
+	padding-bottom: 10px;
+}
+
+.dataEntryDiv h3 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	border-bottom: solid 1px #b2b2b2;
+	background-color: #dbdbdb;
+}
+
+#newUserTable {
+	width: 95%;
+}
+
+#newUserTable td {
+	text-align: center;
+}
+
+/* ////////////////  Table styles  //////////////// */
+
+.adminTable {
+	margin: 10px auto 0 auto;
+	width: 90%; 
+}
+
+.adminTable th {
+	text-align: center;
+	border-bottom: solid 1px #000000;
+}
+
+.productCol{
+	width: 25%;
+}
+
+.questionCol {
+	width: 45%;
+}
+
+#questionTable td {
+	padding: 10px;
+}
+
+#questionTable th {
+	text-align: center;
+	border-bottom: solid 1px #000000;
+}
+
+.centerCell {
+	text-align: center;
+}
+
+.productCol{
+	width: 25%;
+}
+
+.userCol {
+	width: 25%;
+}
+
+.dateCol {
+	width: 20%;
+}
+
+.viewCol {
+	width: 15%;
+}
+
+.deleteCol {
+	width: 15%;
+}
+
+.nameCol {
+	width: 35%;
+}
+
+.passwordCol {
+	width: 35%;
+}
+
+#reponseTable td {
+	padding: 10px;
+}

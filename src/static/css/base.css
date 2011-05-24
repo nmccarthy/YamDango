@@ -1,0 +1,169 @@
+/* ////////////////  Basic styles  //////////////// */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	min-width: 1024px;
+	margin-bottom: 100px;
+}
+
+h1 {
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	padding: 0;
+	text-align: center;
+	width: 90%;
+	margin: 10px auto 0 auto;
+}
+
+h3 {
+	padding: 0;
+	margin: 10px auto 0 auto;
+	text-align: center;
+}
+
+p {
+	padding: 5px 0 0 0;
+	margin: 0;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #CF842D;
+}
+
+a img {
+	border: none;
+}
+
+a.link {
+	text-decoration: none;
+	color: #CF842D;
+}
+
+a:visited {
+	color: #EA6F47;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #EBA960;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #FFE456;
+	text-decoration: underline;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	table-layout: fixed;
+	border-spacing: 0;
+}
+
+table td {
+	text-align: center;
+}
+
+table a {
+	text-decoration: none;
+	color: #CF842D;
+}
+
+a.link {
+	text-decoration: none;
+	color: #CF842D;
+}
+
+a:visited {
+	color: #EA6F47;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #EBA960;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #FFE456;
+	text-decoration: underline;
+}
+
+input {
+	font-family: Arial, sans-serif;
+}
+
+textarea {
+	font-family: Arial, sans-serif;
+}
+
+#mastHead {
+	text-align: center;
+	border-bottom: solid 1px #ACD0EA;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #B4D0EA;
+}
+
+#bannerImage {
+	height: 42px;
+	width: auto;
+	vertical-align: bottom;
+}
+
+#naviBar {
+	float: left;
+	width: 15%;
+	border-right: solid 1px #ACD0EA;
+	padding-top: 10px;
+	height: 500px;
+	overflow: hidden;
+}
+
+#mainContent {
+	width: 84%;
+	padding-top: 10px;
+	overflow: hidden;
+}
+
+#breadCrumb {
+	list-style-type: none;
+	margin: 15px 0 0 20px;
+}
+
+#breadCrumb li {
+	margin-bottom: 5px;
+}
+
+#breadCrumb ul {
+	padding-left: 20px;
+}
+
+#breadCrumb ul li {
+	list-style-image: url('/images/carriageReturn.png');
+}
+
+.odd {
+	background-color: #d8d8d8;
+}
+
+table label {
+	font-weight: bold;
+}
