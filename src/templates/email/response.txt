@@ -1,0 +1,6 @@
+Response to {{ questionnaireName }}
+Submitted by {{ submitter }}, {{ submitterEmail }}
+{% for response in responses %}
+	{{ response.q }}
+	{{ response.r }}
+{% endfor %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block addTitle %}<title>Yammer Integration Products</title>{% endblock addTitle %}
+
+{% block addCSS %}
+	<link type="text/css" rel="stylesheet" href="/css/questionnaire.css" />
+{% endblock addCSS %}
+
+{% block body %}
+		<h2>{{ questionnaire.name }}</h2>
+		<p>The answers to these questions will help us support your integration project.</p>
+		<form action="" method="post">
+			{% for question in spQuestions %}
+				<h3 class="questionHeader">{{ question.text }}</h3>
+				<p><textarea class="qEntry" name="response{{question.id}}" rows="4" cols="70"></textarea></p>
+			{% endfor %}
+			<p class="submitWrapper"><input type="submit" value="Submit"/></p>
+		</form>
+{% endblock body %}

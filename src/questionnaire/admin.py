@@ -1,8 +1,10 @@
-from questionnaire.models import Question, Product, Questionnaire
+from questionnaire.models import Question, Product, Questionnaire, PendingUser, Response, ResponseSet
 from django.contrib import admin
 
-#admin.site.register(Question)
 admin.site.register(Product)
+admin.site.register(PendingUser)
+admin.site.register(Response)
+admin.site.register(ResponseSet)
 
 class QuestionInline(admin.TabularInline):
     model = Question

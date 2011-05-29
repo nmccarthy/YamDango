@@ -18,14 +18,12 @@
 
 		{% block mastHead %}
 			<div id="mastHead">
-				<h1><img id="bannerImage" src="images/yammer_bubble.png" /> Yammer Integration Products {{ testSession }}</h1>
+				<h1><img id="bannerImage" src="/images/yammer_bubble.png" /> Yammer Integration Products</h1>
+				{% if not user.is_anonymous %}
+					<p>Welcome, {{ user.username }} | <a href="/accounts/logout">Logout</a></p>
+				{% endif %}
 			</div>
 		{% endblock mastHead %}
-
-		<div id="naviBar">
-			{% block breadCrumb %}
-			{% endblock breadCrumb %}
-		</div>
 
 		<div id="mainContent">
 			{% block body %}{% endblock body %}

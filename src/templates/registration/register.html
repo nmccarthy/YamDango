@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block addTitle %}<title>Create an account</title>{% endblock %}
+
+{% block body %}
+ 	<h2>Create an account</h2>
+	<p>Welcome, <i>{{ signUpEmail }}</i>, please sign up below.</p>
+	<form action="/accounts/signup/?email={{ signUpEmail }}" method="post">
+		{{ form.as_p }}
+		<p><input type="submit" value="Create the account"></p>
+	</form>
+{% endblock %}

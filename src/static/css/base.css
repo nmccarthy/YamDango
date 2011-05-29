@@ -141,6 +141,7 @@ textarea {
 	width: 84%;
 	padding-top: 10px;
 	overflow: hidden;
+	margin: 0 auto;
 }
 
 #breadCrumb {
