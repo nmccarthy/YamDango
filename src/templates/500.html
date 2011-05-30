@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
-{% block title %}Server error{% endblock %}
 
-{% block content %}
-There was an error while handling your request.
+{% block addTitle %}<title>Server error</title>{% endblock %}
+
+{% block body %}
+	<p>Error: There was an error while handling your request.</p>
 {% endblock %}

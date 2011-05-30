@@ -4,7 +4,6 @@ from django.contrib.auth.views import login, logout
 
 admin.autodiscover()
 handler500 = 'djangotoolbox.errorviews.server_error'
-handler404 = 'questionnaire.views.notFound'
 
 urlpatterns = patterns('',
     (r'^$', 'questionnaire.views.index'),

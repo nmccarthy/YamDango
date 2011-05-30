@@ -12,18 +12,18 @@ import datetime
 
 distroEmails = ['nmccarthy@yammer-inc.com']
 
-def sandbox(request):
-    deletemes = Response.objects.all()
-    
-    for deleteme in deletemes:
-        deleteme.delete()
-    
-    deletemes = ResponseSet.objects.all()
-    
-    for deleteme in deletemes:
-        deleteme.delete()
-
-    return HttpResponseRedirect('/')
+#def sandbox(request):
+#    deletemes = Response.objects.all()
+#    
+#    for deleteme in deletemes:
+#        deleteme.delete()
+#    
+#    deletemes = ResponseSet.objects.all()
+#    
+#    for deleteme in deletemes:
+#        deleteme.delete()
+#
+#    return HttpResponseRedirect('/')
 
 def registration(request):
 
@@ -39,6 +39,10 @@ def registration(request):
     #has the user previously signed up?
     if User.objects.filter(email = signUpEmail):
         return render_to_response('error/alreadySignedUp.html', context_instance = RequestContext(request))
+
+    #was the user invited?
+    if not PendingUser.objects.filter(inviteEmail = signUpEmail):
+        return render_to_response('error/notInvited.html', context_instance = RequestContext(request))
 
     if request.method == 'POST':
         form = UserCreationForm(request.POST)

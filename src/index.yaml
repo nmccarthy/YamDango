@@ -36,4 +36,27 @@ indexes:
   - name: __key__
     direction: desc
 
-- kind: questionn
+- kind: questionnaire_question
+  properties:
+  - name: __key__
+    direction: desc
+
+- kind: questionnaire_question
+  properties:
+  - name: questionnaire_id
+  - name: sortOrder
+
+- kind: questionnaire_questionnaire
+  properties:
+  - name: __key__
+    direction: desc
+
+- kind: questionnaire_response
+  properties:
+  - name: __key__
+    direction: desc
+
+- kind: questionnaire_responseset
+  properties:
+  - name: __key__
+    direction: desc
