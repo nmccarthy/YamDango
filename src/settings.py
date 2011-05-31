@@ -4,6 +4,7 @@
 from djangoappengine.settings_base import *
 
 import os
+import pw
 
 # Activate django-dbindexer for the default database
 DATABASES['native'] = DATABASES['default']
@@ -59,7 +60,7 @@ TEST_RUNNER = 'djangotoolbox.test.CapturingTestSuiteRunner'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'integration@yammer-inc.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_PASSWORD = pw.integrationPw
 EMAIL_USE_TLS = True
 
 #Development Email Server
