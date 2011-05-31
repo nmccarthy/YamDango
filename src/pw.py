@@ -1,2 +1,2 @@
 #Yammer service account password
-integrationPw = 'xxx'
+integrationPw = 'xxxx'
