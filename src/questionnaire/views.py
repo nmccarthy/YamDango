@@ -84,7 +84,7 @@ def invite(request):
                 d = Context({ 'email': email})
 
                 #build email components
-                subject, from_email = 'Yammer Integration Downloads', 'nmccarthy@yammer-inc.com'
+                subject, from_email = 'Yammer Integration Downloads', 'integration@yammer-inc.com'
                 text_content = plaintext.render(d)
                 html_content = htmly.render(d)
 
@@ -151,7 +151,7 @@ def adsyncQuestionnaire(request):
 
         #build email components
         subject = request.user.email + ' responded to the ' + question.questionnaire.name
-        from_email = 'nmccarthy@yammer-inc.com'
+        from_email = 'integration@yammer-inc.com'
         text_content = plaintext.render(d)
         html_content = htmly.render(d)
 
@@ -210,7 +210,7 @@ def sharepointQuestionnaire(request):
 
         #build email components
         subject = request.user.email + ' responded to the ' + question.questionnaire.name
-        from_email = 'nmccarthy@yammer-inc.com'
+        from_email = 'integration@yammer-inc.com'
         text_content = plaintext.render(d)
         html_content = htmly.render(d)
 
@@ -268,7 +268,7 @@ def ssoQuestionnaire(request):
 
         #build email components
         subject = request.user.email + ' responded to the ' + question.questionnaire.name
-        from_email = 'nmccarthy@yammer-inc.com'
+        from_email = 'integration@yammer-inc.com'
         text_content = plaintext.render(d)
         html_content = htmly.render(d)
 
