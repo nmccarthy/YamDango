@@ -58,8 +58,8 @@ TEST_RUNNER = 'djangotoolbox.test.CapturingTestSuiteRunner'
 #Production Email Server (Neil's gmail)
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'nmccarthy@yammer-inc.com'
-EMAIL_HOST_PASSWORD = 'YAM44high'
+EMAIL_HOST_USER = 'integration@yammer-inc.com'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 
 #Development Email Server

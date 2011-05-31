@@ -1,14 +1,13 @@
 from django.shortcuts import render_to_response
-from questionnaire.models import Questionnaire, Question, SignUpForm, InviteForm, PendingUser, Response, ResponseSet
+from questionnaire.models import Questionnaire, Question, InviteForm, PendingUser, Response, ResponseSet
 from django.template import Context, RequestContext
-from django.http import Http404, HttpResponseRedirect, HttpResponse
+from django.http import Http404, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
-import datetime
 
 distroEmails = ['nmccarthy@yammer-inc.com']
 
@@ -42,7 +41,7 @@ def registration(request):
 
     #was the user invited?
     if not PendingUser.objects.filter(inviteEmail = signUpEmail):
-        return render_to_response('error/notInvited.html', context_instance = RequestContext(request))
+        return render_to_response('error/notInvited.html', {'attemptEmail': signUpEmail}, context_instance = RequestContext(request))
 
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
